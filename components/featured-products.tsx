@@ -49,7 +49,7 @@ export default function FeaturedProducts({ filters }: FeaturedProductsProps) {
     return <p className="py-12 text-center text-red-500">{error}</p>;
 
   return (
-    <section className="w-full px-4 py-12 bg-[#F8F4E3] dark:bg-gray-900">
+    <section id="featured-products" className="w-full px-4 py-12 bg-[#F8F4E3] dark:bg-gray-900">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 text-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl dark:text-white">
