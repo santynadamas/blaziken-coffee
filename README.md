@@ -37,7 +37,7 @@ This project follows a **headless architecture**, decoupling the frontend from t
 
 ## 🌐 Live Demo
 
-👉 https://portafolio-7wpueek9j-santiagorojass018-2635s-projects.vercel.app/
+https://blaziken-coffee.vercel.app/
 
 ---
 
