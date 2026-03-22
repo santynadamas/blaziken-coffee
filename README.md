@@ -41,15 +41,6 @@ This project follows a **headless architecture**, decoupling the frontend from t
 
 ---
 
-## 📸 Screenshots
-
-<!-- Add screenshots here -->
-<!-- Example:
-![Home](./screenshots/home.png)
--->
-
----
-
 ## ⚙️ Installation
 
 ```bash
