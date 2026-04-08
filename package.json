@@ -9,7 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@prisma/client": "^7.6.0",
     "@sanity/client": "^7.18.0",
     "@sanity/image-url": "^2.0.3",
     "autoprefixer": "^10.4.27",
@@ -27,7 +26,6 @@
     "next-sanity": "^12.1.1",
     "next-themes": "^0.4.6",
     "postcss": "^8.5.8",
-    "prisma": "^6.19.3",
     "radix-ui": "^1.4.3",
     "react": "19.2.4",
     "react-dom": "19.2.4",
