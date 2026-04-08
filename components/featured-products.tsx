@@ -70,7 +70,7 @@ export default function FeaturedProducts({ filters }: FeaturedProductsProps) {
                       className="flex-[0_0_100%] sm:flex-[0_0_60%] md:flex-[0_0_40%] lg:flex-[0_0_25%]"
                     >
                       <Card className="overflow-hidden rounded-2xl p-0 bg-[#E6D8A3] dark:bg-gray-800 animate-pulse">
-                        <div className="w-full h-56 bg-gray-300 dark:bg-gray-700" />
+                        <div className="w-full aspect-[16/9] bg-gray-300 dark:bg-gray-700" />
                         <CardContent className="p-4 space-y-2 text-gray-900 dark:text-white">
                           <div className="w-3/4 h-6 bg-gray-300 rounded dark:bg-gray-700"></div>
                           <div className="w-full h-4 bg-gray-300 rounded dark:bg-gray-700"></div>
@@ -91,16 +91,14 @@ export default function FeaturedProducts({ filters }: FeaturedProductsProps) {
                           className="block h-full"
                         >
                           {product.image && (
-                            <div className="w-full h-56">
-                              <img
-                                src={urlFor(product.image)
-                                  .width(500)
-                                  .height(300)
-                                  .url()}
-                                alt={product.name}
-                                className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
-                              />
-                            </div>
+                            <img
+                              src={urlFor(product.image)
+                                .width(600)
+                                .height(400)
+                                .url()}
+                              alt={product.name}
+                              className="w-full aspect-[16/9] object-cover transition-transform duration-500 hover:scale-105 rounded-t-2xl"
+                            />
                           )}
 
                           <CardContent className="p-4 text-gray-900 dark:text-white">

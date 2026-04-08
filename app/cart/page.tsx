@@ -51,7 +51,7 @@ export default function CartPage() {
               Add your favorite coffees to the cart to purchase them.
             </p>
             <Link
-              href="/shop"
+              href="/#featured-products"
               className="px-6 py-3 text-white transition bg-amber-600 rounded-xl hover:bg-amber-700"
             >
               Go to shop

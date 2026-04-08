@@ -30,29 +30,37 @@ export default function ChooseCategories() {
                   key={skeleton}
                   className="bg-[#E6D8A3] dark:bg-gray-800 rounded-2xl animate-pulse"
                 >
-                  <div className="w-full h-56 bg-gray-300 dark:bg-gray-700 rounded-t-2xl" />
-                  <CardContent className="flex flex-col justify-between h-full">
-                    <div className="space-y-2">
-                      <div className="w-3/4 h-6 bg-gray-300 rounded dark:bg-gray-700"></div>
-                      <div className="w-full h-4 bg-gray-300 rounded dark:bg-gray-700"></div>
-                    </div>
-                    <div className="w-1/3 h-5 mt-4 bg-gray-300 rounded dark:bg-gray-700"></div>
-                  </CardContent>
+                  <div className="w-full aspect-[16/9] bg-gray-300 dark:bg-gray-700 rounded-t-2xl" />
+                  <CardContent />
                 </Card>
               ))
             : categories.map((category) => (
                 <Card
                   key={category._id}
                   className="bg-[#E6D8A3] text-gray-900 dark:bg-gray-800 dark:text-white 
-                    rounded-2xl transition-transform duration-300 cursor-pointer 
+                    rounded-2xl transition-transform duration-300 
                     hover:-translate-y-1 hover:shadow-lg"
                 >
+                  {/* Imagen ocupa toda la parte superior */}
                   {category.image && (
-                    <img
-                      src={urlFor(category.image).width(400).height(250).url()}
-                      alt={category.name}
-                      className="object-cover w-full h-56 rounded-t-2xl"
-                    />
+                    <Link
+                      href={
+                        category.name.toLowerCase() === "beans"
+                          ? "/coffees/beans"
+                          : category.name.toLowerCase() === "ground"
+                          ? "/coffees/ground"
+                          : category.name.toLowerCase() === "capsules"
+                          ? "/coffees/capsules"
+                          : "/coffees"
+                      }
+                      className="block"
+                    >
+                      <img
+                        src={urlFor(category.image).width(600).height(400).url()}
+                        alt={category.name}
+                        className="w-full aspect-[16/9] object-cover rounded-t-2xl"
+                      />
+                    </Link>
                   )}
 
                   <CardContent className="flex flex-col justify-between h-full">
